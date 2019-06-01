@@ -1,1 +1,1 @@
-# Temp repository for 'Visuel Kultur'
+# Repository for 'Visuel Kultur'
