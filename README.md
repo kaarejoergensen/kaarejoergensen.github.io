@@ -1,4 +1,5 @@
-# Bachelor og inspirationskatalog i Visuel Kultur
-# Cathrine Wraber
+# Bachelorprojekt og inspirationskatalog i Visuel Kultur
+## Cathrine Wraber
 
-[Inpirationskatalog](Visuel-Kultur-i-indskolingen-et-inspirationskatalog.pdf)
+[Inpirationskatalog](kaarejoergensen.github.io/Visuel-Kultur-i-indskolingen-et-inspirationskatalog.pdf)
+[Bachelorprojekt](kaarejoergensen.github.io/Bachelorprojekt-Visuel-kultur-i-indskolingen.pdf)
