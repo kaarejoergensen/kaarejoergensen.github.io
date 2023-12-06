@@ -30,7 +30,7 @@ h2 {
 
 .link_container {
     /*position: fixed;*/
-    margin-top: 30vh;
+    margin-top: 12vh;
     margin-bottom: 10vh;
     padding: 2vmin;
     /*bottom: 0;
@@ -45,6 +45,10 @@ h2 {
 
 </style>
 <script>
+function onLoad() {
+    isHeNice()
+    randomSong()
+}
 function isHeNice() {
     var elem = document.getElementById("answer");
     var rand = Math.floor(Math.random() * 7);
@@ -52,23 +56,49 @@ function isHeNice() {
     elem.innerHTML = answers[rand];
     console.log("Hvad laver du???????");
 }
+
+function randomSong() {
+    var elem = document.getElementById("song");
+    var rand = Math.floor(Math.random() * 7);
+    const answers = ["yeat.mp3", "birthday.mp3", "911.mp3", "mask.mp3", "role.mp3", "saxo.mp3", "sicko.mp3"];
+    elem.src = "songs/"+answers[rand];
+    console.log(elem.src)
+}
+
+function play() {
+    var song = document.getElementById("song");
+    var hotdog = document.getElementById("hotdog");
+    if (song.paused) {
+        var rand = Math.floor(Math.random() * 7);
+        const answers = ["yeat.mp3", "birthday.mp3", "911.mp3", "mask.mp3", "role.mp3", "saxo.mp3", "sicko.mp3"];
+        song.src = "songs/"+answers[rand];
+        song.play();
+        hotdog.src = "hotdog.gif"
+    } else {
+        song.pause();
+        hotdog.src = "hotdog_frame.gif"
+    }
+}
 </script>
 </head>
 <body onLoad="isHeNice();">
 
 <div>
-<h1>Er Tore nice?</h1>
+    <h1>Er Tore nice?</h1>
 
-<h2 id="answer"/>
+    <h2 id="answer"/>
 </div>
-
+<img id="hotdog" src="hotdog_frame.gif" onclick="play()">
+<!-- <div onclick="play()">
+<video id="hotdog" src="hotdog2.mp4" loop/>
+</div>
+ -->
 <div class="link_container">
     <a class="link" href="gave.html">Gå til gave</a>
 </div>
 
-
-
-
 </body>
+<audio id="song" loop>
+
 </html>
 
