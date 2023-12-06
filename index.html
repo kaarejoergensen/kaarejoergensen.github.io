@@ -16,27 +16,33 @@ body {
 }
 
 h1 {
-    margin-top: 350px;
-    font-size: 56pt;
+    margin-top: 15vh;
+    font-size: 8vmin;
     line-height: 2em;
     color: #5b4366;
 }
 
 h2 {
-    margin-top: 200px;
-    font-size: 80pt;
+    margin-top: 12vh;
+    font-size: 11vmin;
     color: #66bc46;
 }
 
-.link {
-    font-size: 30pt;
-    position: fixed;
-    margin-bottom: 100px;
-    bottom: 0;
+.link_container {
+    /*position: fixed;*/
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+    padding: 2vmin;
+    /*bottom: 0;
     left: 0;
-    right: 0;
+    right: 0;*/
+}
+
+.link {
+    font-size: 4vmin;
     color: #5b4366;
 }
+
 </style>
 <script>
 function isHeNice() {
@@ -50,11 +56,18 @@ function isHeNice() {
 </head>
 <body onLoad="isHeNice();">
 
+<div>
 <h1>Er Tore nice?</h1>
 
-<h2 id="answer"></h2>
+<h2 id="answer"/>
+</div>
 
-<a class="link" href="gave.html">Gå til gave</a>
+<div class="link_container">
+    <a class="link" href="gave.html">Gå til gave</a>
+</div>
+
+
+
 
 </body>
 </html>
